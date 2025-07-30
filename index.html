@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="output.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+</head>
+
+<body class="relative">
+
+  <!-- pop-up-starts -->
+  <div id="popup-box" class="fixed top-0 left-0 inset-0 hidden z-50  items-center justify-center   bg-[#0000001f]">
+    <div class="relative w-full max-w-md mx-auto">
+      <!-- Close Icon -->
+      <button
+        class="absolute top-4 right-4 text-white flex items-center justify-center bg-[#082473] w-[30px] h-[30px] rounded-full cursor-pointer transition-all"
+        aria-label="Close"
+        id="cross-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <!-- Form -->
+      <form action="https://api.web3forms.com/submit" method="POST"  class="bg-white p-8 rounded-2xl shadow-md space-y-6">
+
+        <h2 class="text-[20px] font-[quicksand-bold] text-center">Get In Touch</h2>
+        <input type="hidden" name="access_key" value="8209f2e0-254b-48c0-953e-3ef9d8bf5209">
+
+
+
+
+        <input
+          type="text"
+          id=""
+          name="name"
+          placeholder="Full Name"
+          class="w-full px-4 py-3 rounded-xl bg-gray-100 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-all" />
+
+        <input
+          type="email"
+          id=""
+          name="email"
+          placeholder="Email Address"
+          class="w-full px-4 py-3 rounded-xl bg-gray-100 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-all" />
+
+        <input
+          type="tel"
+          id=""
+          name="number"
+          placeholder="Mobile Number"
+          class="w-full px-4 py-3 rounded-xl bg-gray-100 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-all" />
+
+        <button
+
+          type="submit"
+          class="w-full bg-blue-500 text-white font-semibold py-3 rounded-xl hover:bg-blue-600 transition-all">
+          Submit
+        </button>
+      </form>
+    </div>
+
+
+  </div>
+  <!-- pop-up-ends -->
+
+  <!-- enroll-now -->
+  <div class="w-full py-5 bg-[#E5F5FB] fixed flex px-[50px] shadow-sm z-50 bottom-0 left-0">
+    <div class="w-1/2">
+      <span class="md:text-5xl text-[32px] font-[quicksand-bold] text-black ">₹99</span>
+      <span class="md:text-2xl font-[quicksand-medium] text-black line-through">₹1999</span>
+      <span class="md:text-2xl font-[quicksand-medium]  text-black ">90% Off</span>
+    </div>
+    <div class="w-1/2 justify-end flex ">
+      <button
+        class=" sm:w-full md:w-1/2  items-center justify-center  border-1 cursor-pointer relative flex gap-2  border-white bg-gradient-to-r from-[#082473] rounded-full via-[#058BD3] to-[#058BD3]  text-white  md:px-[100px] px-[20px] py- md:text-[22px] font-[quicksand-bold]">
+        <a href="https://rzp.io/rzp/r9rt428t" target="_blank">ENROLL NOW </a>
+
+
+      </button>
+    </div>
+  </div>
+  <!-- enroll-now -->
+  <!-- marquee div start -->
+
+  <div class="bg-[#082473] py-2 overflow-hidden relative">
+    <div class="flex w-[200%] gap-x-5 h-12 marquee-track">
+      <!-- Marquee content duplicated for seamless loop -->
+      <div class="flex shrink-0 md:shrink  md:w-1/2 justify-around items-center">
+        <!-- Repeat this block as needed -->
+        <div class="flex gap-2  items-center">
+          <i class="fa-solid fa-star text-xl" style="color: #f8b81f"></i>
+          <span class="text-xl text-white font-[quicksand-bold] font-bold">Register Now</span>
+          <i class="fa-solid fa-star text-xl" style="color: #f8b81f"></i>
+        </div>
+        <!-- Copy this block multiple times or map dynamically -->
+      </div>
+
+      <div class="flex shrink-0 md:shrink gap-8 md:w-1/2 justify-around items-center">
+        <!-- Exact duplicate of the above for looping -->
+        <div class="flex gap-2 items-center">
+          <i class="fa-solid fa-star text-xl" style="color: #f8b81f"></i>
+          <span class="text-xl text-white font-[quicksand-bold] font-bold">Register Now</span>
+          <i class="fa-solid fa-star text-xl" style="color: #f8b81f"></i>
+        </div>
+        <!-- Repeat again -->
+      </div>
+
+      <div class="flex shrink-0 md:shrink gap-8 md:w-1/2 justify-around items-center">
+        <!-- Exact duplicate of the above for looping -->
+        <div class="flex  gap-2 items-center">
+          <i class="fa-solid fa-star text-xl" style="color: #f8b81f"></i>
+          <span class="text-xl text-white font-[quicksand-bold] font-bold">Register Now</span>
+          <i class="fa-solid fa-star text-xl" style="color: #f8b81f"></i>
+        </div>
+        <!-- Repeat again -->
+      </div>
+
+      <div class="flex shrink-0 md:shrink gap-8 md:w-1/2 justify-around items-center">
+        <!-- Exact duplicate of the above for looping -->
+        <div class="flex gap-2 items-center">
+          <i class="fa-solid fa-star text-xl" style="color: #f8b81f"></i>
+          <span class="text-xl text-white font-[quicksand-bold] font-bold">Register Now</span>
+          <i class="fa-solid fa-star text-xl" style="color: #f8b81f"></i>
+        </div>
+        <!-- Repeat again -->
+      </div>
+
+      <div class="flex shrink-0 md:shrink gap-8 md:w-1/2 justify-around items-center">
+        <!-- Exact duplicate of the above for looping -->
+        <div class="flex gap-2 items-center">
+          <i class="fa-solid fa-star text-xl" style="color: #f8b81f"></i>
+          <span class="text-xl text-white font-[quicksand-bold] font-bold">Register Now</span>
+          <i class="fa-solid fa-star text-xl" style="color: #f8b81f"></i>
+        </div>
+        <!-- Repeat again -->
+      </div>
+
+      <div class="flex shrink-0 md:shrink gap-8 md:w-1/2 justify-around items-center">
+        <!-- Exact duplicate of the above for looping -->
+        <div class="flex gap-2 items-center">
+          <i class="fa-solid fa-star text-xl" style="color: #f8b81f"></i>
+          <span class="text-xl text-white font-[quicksand-bold] font-bold">Register Now</span>
+          <i class="fa-solid fa-star text-xl" style="color: #f8b81f"></i>
+        </div>
+        <!-- Repeat again -->
+      </div>
+
+      <div class="flex shrink-0 md:shrink gap-8 md:w-1/2 justify-around items-center">
+        <!-- Exact duplicate of the above for looping -->
+        <div class="flex gap-2 items-center">
+          <i class="fa-solid fa-star text-xl" style="color: #f8b81f"></i>
+          <span class="text-xl text-white font-[quicksand-bold] font-bold">Register Now</span>
+          <i class="fa-solid fa-star text-xl" style="color: #f8b81f"></i>
+        </div>
+        <!-- Repeat again -->
+      </div>
+
+      <div class="flex shrink-0 md:shrink gap-8 md:w-1/2 justify-around items-center">
+        <!-- Exact duplicate of the above for looping -->
+        <div class="flex gap-2 items-center">
+          <i class="fa-solid fa-star text-xl" style="color: #f8b81f"></i>
+          <span class="text-xl text-white font-[quicksand-bold] font-bold">Register Now</span>
+          <i class="fa-solid fa-star text-xl" style="color: #f8b81f"></i>
+        </div>
+        <!-- Repeat again -->
+      </div>
+
+      <div class="flex shrink-0 md:shrink gap-8 md:w-1/2 justify-around items-center">
+        <!-- Exact duplicate of the above for looping -->
+        <div class="flex gap-2 items-center">
+          <i class="fa-solid fa-star text-xl" style="color: #f8b81f"></i>
+          <span class="text-xl text-white font-[quicksand-bold] font-bold">Register Now</span>
+          <i class="fa-solid fa-star text-xl" style="color: #f8b81f"></i>
+        </div>
+        <!-- Repeat again -->
+      </div>
+
+      <div class="flex shrink-0 md:shrink gap-8 md:w-1/2 justify-around items-center">
+        <!-- Exact duplicate of the above for looping -->
+        <div class="flex gap-2 items-center">
+          <i class="fa-solid fa-star text-xl" style="color: #f8b81f"></i>
+          <span class="text-xl text-white font-[quicksand-bold] font-bold">Register Now</span>
+          <i class="fa-solid fa-star text-xl" style="color: #f8b81f"></i>
+        </div>
+        <!-- Repeat again -->
+      </div>
+
+      <div class="flex shrink-0 md:shrink gap-8 md:w-1/2 justify-around items-center">
+        <!-- Exact duplicate of the above for looping -->
+        <div class="flex gap-2 items-center">
+          <i class="fa-solid fa-star text-xl" style="color: #f8b81f"></i>
+          <span class="text-xl text-white font-[quicksand-bold] font-bold">Register Now</span>
+          <i class="fa-solid fa-star text-xl" style="color: #f8b81f"></i>
+        </div>
+        <!-- Repeat again -->
+      </div>
+
+      <div class="flex shrink-0 md:shrink gap-8 md:w-1/2 justify-around items-center">
+        <!-- Exact duplicate of the above for looping -->
+        <div class="flex gap-2 items-center">
+          <i class="fa-solid fa-star text-xl" style="color: #f8b81f"></i>
+          <span class="text-xl text-white font-[quicksand-bold] font-bold">Register Now</span>
+          <i class="fa-solid fa-star text-xl" style="color: #f8b81f"></i>
+        </div>
+        <!-- Repeat again -->
+      </div>
+
+      <div class="flex shrink-0 md:shrink gap-8 md:w-1/2 justify-around items-center">
+        <!-- Exact duplicate of the above for looping -->
+        <div class="flex gap-2 items-center">
+          <i class="fa-solid fa-star text-xl" style="color: #f8b81f"></i>
+          <span class="text-xl text-white font-[quicksand-bold] font-bold">Register Now</span>
+          <i class="fa-solid fa-star text-xl" style="color: #f8b81f"></i>
+        </div>
+        <!-- Repeat again -->
+      </div>
+
+      <div class="flex shrink-0 md:shrink gap-8 md:w-1/2 justify-around items-center">
+        <!-- Exact duplicate of the above for looping -->
+        <div class="flex gap-2 items-center">
+          <i class="fa-solid fa-star text-xl" style="color: #f8b81f"></i>
+          <span class="text-xl text-white font-[quicksand-bold] font-bold">Register Now</span>
+          <i class="fa-solid fa-star text-xl" style="color: #f8b81f"></i>
+        </div>
+        <!-- Repeat again -->
+      </div>
+    </div>
+  </div>
+
+  <!-- marquee div ends -->
+
+  <!-- icon-images-div -->
+
+  <div class="flex items-center justify-center  !p-[50px]">
+    <img class="w-[100px]" src="/assets/logo/itaa-logo.png" alt="image" class="" />
+
+
+
+  </div>
+
+  <!-- icon-images-div -->
+
+  <!-- Section-1-starts -->
+  <section class="flex flex-col items-center justify-center gap-y-10">
+    <div class="flex flex-col gap-y-4 items-center justify-center w-full">
+      <h2 class="font-[quicksand-bold] sm:text-[20px] text-center  md:text-[36px] md:leading-[40px]">
+        Welcome to
+        <span class="text-[#39C0FA]">SAP S/4HANA Public Cloud </span>
+        Certification Course
+      </h2>
+      <h3 class="font-[quicksand]  md:text-[22px] text-center">
+        Join our exclusive webinar to learn how to deliver real-time, personalized engagement across every channel.
+      </h3>
+    </div>
+    <div class="md:flex w-full  md:mt-[50px] ">
+      <!-- hero-banner-image-start -->
+      <div class="md:w-1/2 flex p-5 sm:shrink-0 md:shrink  justify-center">
+        <img class="  md:w-[500px]  rounded-lg" src="/assets/logo/2532-SAP..jpgL.jpg" alt="" />
+      </div>
+      <!-- hero-banner-image-ends -->
+
+      <!-- hero-right-content-start -->
+
+      <div class="md:w-1/2 p-5 flex flex-col gap-y-4 sm:items-center md:items-start">
+        <div class="flex   gap-5">
+          <h3 class="font-[quicksand-bold] w-[200px] md:text-[22px] flex items-center gap-2">
+            <i class="fa-solid fa-clock" style="color: #ffd43b;"></i>
+            <p class="text-[18px] capitalize">practical real-world Training </p>
+          </h3>
+
+          <h3 class="font-[quicksand-bold] w-[250px] flex gap-2 items-center text-[22px]">
+            <i class="fa-solid fa-calendar-days" style="color: #ffd43b;"></i>
+            <p class="text-[18px] capitalize">
+              step-by-step expert guidance
+            </p>
+
+          </h3>
+        </div>
+
+        <div
+          class="md:w-[60%] sm:w-full bg-[#39c0fa48] border text-[17px] md:mt-[30px] font-[Quicksand-Medium]  border-[#39C0FA] rounded-lg !p-4 capitalize">
+          join our expert led SAP business consulting program webinar & discover how you can build a high paying IT
+          career from scratch .
+
+
+        </div>
+
+        <div class="flex items-center justify-center md:w-[60%] mt-[20px]">
+          <button
+            class=" apply-btn bg-gradient-to-r from-[#082473] rounded-full via-[#082473] to-[#39C0FA]  text-white px-8 py-3 text-[20px] cursor-pointer font-[quicksand-bold]">
+            Join Us Now
+          </button>
+
+        </div>
+        <div class="md:w-[60%]">
+          <p class=" text-[17px] text-center font-[quicksand] py-3">
+            29 Seats Left
+          </p>
+        </div>
+
+
+
+      </div>
+
+      <!-- hero-right-content-ends -->
+    </div>
+  </section>
+  <!-- Section-1-ends -->
+
+  <!-- Section-2-starts -->
+  <section class="flex  w-full md:py-[100px] flex-col gap-y-4">
+    <h2 class="text-center text-[#082473] font-[quicksand-bold] text-[18px] md:text-[40px] capitalize ">
+      how we will make you job ready ?
+    </h2>
+
+    <!-- program-div-start -->
+    <div class="md:flex  md:w-[80%]  gap-x-5 m-auto items-center justify-between md:px-[60px]  py-[20px]">
+      <div
+        class="border-2  border-[#082473] p-2 md:w-[500px] w-[300px] items-center justify-center md:h-[150px]      flex flex-col gap-3   rounded-lg">
+
+        <h4 class="text-center font-[quicksand-bold] text-[17px] ">
+          SAP Business Concepts / Hands on Practice
+
+        </h4>
+
+
+      </div>
+
+
+      <div
+        class="border-2 border-[#082473] mt-3 md:mt-0 p-2 md:w-[500px] w-[300px] items-center justify-center md:h-[150px]   flex flex-col gap-3   rounded-lg">
+
+        <h4 class="text-center font-[quicksand-bold] text-[17px] ">
+          Certification & Success Guarantee
+
+        </h4>
+
+
+      </div>
+
+
+      <div
+        class="border-2 border-[#082473] mt-3 md:mt-0 p-2 md:w-[500px] w-[300px] items-center justify-center md:h-[150px]   flex flex-col gap-3   rounded-lg">
+
+        <h4 class="text-center font-[quicksand-bold] text-[17px] ">
+          Business Blue Printing
+
+
+        </h4>
+
+
+      </div>
+
+
+      <div
+        class="border-2 border-[#082473] mt-3 md:mt-0 p-2 md:w-[500px] w-[300px] items-center justify-center md:h-[150px]   flex flex-col gap-3   rounded-lg">
+
+        <h4 class="text-center font-[quicksand-bold] text-[17px] ">
+          Brand Building-
+          LinkedIn / Networking
+
+
+        </h4>
+
+
+      </div>
+
+
+      <div
+        class="border-2 border-[#082473] mt-3 md:mt-0 p-2 md:w-[500px] w-[300px] items-center justify-center md:h-[150px]   flex flex-col gap-3   rounded-lg">
+
+        <h4 class="text-center font-[quicksand-bold] text-[17px] ">
+          Interview Preparation & Job Placement
+
+
+        </h4>
+
+
+      </div>
+
+    </div>
+
+
+    </div>
+    <!-- program-div-ends -->
+  </section>
+  <!-- Section-2-ends -->
+
+
+
+  <!-- Section-3-starts -->
+  <section class="w-full  ">
+    <div class=" w-[100%] relative md:rounded-lg bg-[url('/assets/images/Promise.jpg')] bg-cover bg-center h-[550px]  ">
+      <div class="absolute inset-0 p-5  flex flex-col bg-black/60   rounded-lg w-[100%] h-[100%] top-0 left-0">
+        <h2 class="text-center font-[quicksand-bold] text-[32px] md:text-5xl text-[white] capitalize pt-3">our promises
+          to you</h2>
+        <h4 class="text-center md:pt-[280px] font-[quicksand-semibold] text-[22px] text-[white] mt-5">
+          We promise to deliver the best training experience, ensuring you gain the skills and knowledge needed to excel
+          in your career.
+        </h4>
+        <p class="text-center  font-[quicksand] text-[18px] text-[white] mt-5">
+          We specialize in helping individuals from non-IT fields transition smoothly into high-paying, global roles as
+          SAP Business Consultants — all within just 90 days. No coding or technical skills required! With our proven
+          guidance and industry-relevant training, you’ll gain the confidence and expertise needed to thrive in the
+          world of SAP and unlock exciting international career opportunities.
+        </p>
+
+      </div>
+    </div>
+  </section>
+  <!-- Section-3-ends -->
+
+  <!-- Section-4-starts -->
+  <section class="flex flex-col pt-5">
+    <h2 class="text-center text-[22px] md:text-4xl text-[#082473] capitalize pt-10 font-[quicksand-bold]">
+      who should do this course ?
+    </h2>
+
+    <div
+      class="max-w-full md:max-w-[1250px] w-full mx-auto my-10 p-4 md:p-6 pb-[50px] bg-white rounded relative overflow-hidden">
+
+      <!-- Left arrow -->
+      <button id="leftBtn"
+        class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-[#082473] hover:bg-gray-400 p-2 rounded-full z-10 text-white  invisible">
+        <i class="fa-solid fa-arrow-left" style="color: #FFD43B;"></i>
+      </button>
+
+      <!-- Carousel Track -->
+      <div id="carousel" class="md:flex gap-2 w-full transition-transform duration-500">
+
+        <!-- box1 -->
+        <div class="carousel-item shrink-0 w-[95%] md:w-1/3 p-2">
+          <div class="bg-white shadow-lg flex flex-col items-center justify-center rounded p-4 h-full">
+            <div class="flex items-center justify-center w-[50px] h-[50px] rounded-full bg-[#082473]">
+              <span class="text-[#FFD43B] text-[24px] font-[quicksand-bold]">1</span>
+            </div>
+            <p class="text-[16px] md:text-[18px] px-4 md:px-10 py-5 text-black font-[quicksand-Medium] text-center">
+              Sales professional with minimum 2/3 years experience in managing processes like Enquiry management,
+              Quotation Management, Sales Order Management, Customer Relationship, Payment Follow-up
+            </p>
+          </div>
+        </div>
+
+        <!-- box2 -->
+        <div class="carousel-item shrink-0 w-[95%] md:w-1/3 p-2">
+          <div class="bg-white shadow-lg flex flex-col items-center justify-center rounded p-4 h-full">
+            <div class="flex items-center justify-center w-[50px] h-[50px] rounded-full bg-[#082473]">
+              <span class="text-[#FFD43B] text-[24px] font-[quicksand-bold]">2</span>
+            </div>
+            <p class="text-[16px] md:text-[18px] px-4 md:px-10 py-5 text-black font-[quicksand-Medium] text-center">
+              Supply Chain/Logistics/Warehouse professional with minimum 2/3 years experience in managing processes like
+              delivery management, material management, procurement, purchase order management, order shipment
+            </p>
+          </div>
+        </div>
+
+        <!-- box3 -->
+        <div class="carousel-item shrink-0 w-[95%] md:w-1/3 p-2">
+          <div class="bg-white shadow-lg flex flex-col items-center justify-center rounded p-4 h-full">
+            <div class="flex items-center justify-center w-[50px] h-[50px] rounded-full bg-[#082473]">
+              <span class="text-[#FFD43B] text-[24px] font-[quicksand-bold]">3</span>
+            </div>
+            <p class="text-[16px] md:text-[18px] px-4 md:px-10 py-5 text-black font-[quicksand-Medium] text-center">
+              Finance /Accounting professionals with minimum 2/3 years experience in managing processes like customer
+              invoicing, company accounts, P&L, Tally payment receipts, debit, credit note generation
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right arrow -->
+      <button id="rightBtn"
+        class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-[#082473] hover:bg-gray-400 p-2 rounded-full z-10  invisible">
+        <i class="fa-solid fa-arrow-right" style="color: #FFD43B;"></i>
+      </button>
+
+    </div>
+  </section>
+  <!-- Section-4-ends -->
+
+
+
+  <!-- Section-5-starts -->
+  <section class="w-full md:px-20 flex flex-col md:p-10 pb-0 gap-5">
+    <h1 class="md:text-4xl text-center md:text-left text-[22px] font-[quicksand-bold] py-5  text-[#082473]">What is SAP
+      ?</h1>
+    <div class="md:flex gap-5 w-full">
+      <div class="md:w-1/2 p-5">
+        <img class="rounded-lg" src="/assets/images/ERP.jpg" alt="">
+      </div>
+      <div class="md:w-2/3  p-5">
+        <h2 class="text-2xl font-[quicksand-semibold] ">What is SAP software used for?</h2>
+        <p class="text-[16px] font-[quicksand-Medium] py-3">
+          Traditional business models typically manage data in a decentralized manner, where each department maintains
+          its own separate database. This fragmented approach makes cross-functional data access challenging for
+          employees and leads to duplicate records across departments—driving up IT storage costs and increasing the
+          likelihood of data inconsistencies.
+        </p>
+        <p class="text-[16px] font-[quicksand-Medium] py-3">
+          SAP software is used to streamline and integrate business processes across various departments, providing a
+          centralized platform for data management and analysis. It helps organizations improve efficiency, reduce
+          costs, and enhance decision-making by offering real-time insights into key business metrics.
+        </p>
+        <button
+          class=" mt-5 bg-gradient-to-r from-[#082473] rounded-full via-[#082473] to-[#39C0FA] text-white apply-btn px-8 py-3 text-[20px] font-[quicksand-bold]">
+          <a href="#">Enroll Now</a>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- Section-5-ends -->
+
+
+  <!-- section-6-starts -->
+  <section class="w-full md:flex md:px-20 items-center justify-center p-5 md:p-10">
+    <div class="md:w-1/2  flex-col flex  justify-center ">
+      <h1 class="md:text-4xl text-[22px] font-[quicksand-bold] py-5 md:text-left text-center  text-[#082473]">Why ITAA?
+      </h1>
+      <img class="md:w-[600px] mt-5 rounded-lg md:h-[550px]" src="/assets/images/WHY.jpg" alt="">
+    </div>
+    <div class="md:w-1/2 md:pt-[100px] pt-[30px]  gap-y-5  flex flex-col ">
+
+
+
+
+      <div class="relative inline-flex">
+        <div
+          class="rounded-md w-[900px] font-[quicksand-Medium] text-[17px]  py-4 px-4 bg-[#082473] border border-transparent   text-white transition-all shadow-md hover:shadow-lg  focus:shadow-none  hover:bg-[#39C0FA] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+          Already trained 400 plus SAP consultants in last 4 plus years
+
+        </div>
+        <span
+          class="absolute top-0.5 right-0.5  w-[30px] h-[30px] translate-x-2/4    -translate-y-2/4 font-[quicksand-bold] flex  items-center justify-center rounded-full bg-[#F8B81F] py-1 px-1 text-[18px] text-[#082473]">
+          1
+        </span>
+      </div>
+
+      <div class="relative inline-flex">
+        <div
+          class="rounded-md w-[900px] font-[quicksand-Medium] text-[17px]  py-4 px-4 bg-[#082473] border border-transparent  text-sm text-white transition-all shadow-md hover:shadow-lg  focus:shadow-none  hover:bg-[#39C0FA] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+          You will learn from SAP practitioners, who comes from IT industry, who will give you real world insights
+
+        </div>
+        <span
+          class="absolute top-0.5 right-0.5  w-[30px] h-[30px] translate-x-2/4    -translate-y-2/4 font-[quicksand-bold] flex  items-center justify-center rounded-full bg-[#F8B81F] py-1 px-1 text-[18px] text-[#082473]">
+          2
+        </span>
+      </div>
+
+      <div class="relative inline-flex">
+        <div
+          class="rounded-md w-[900px] font-[quicksand-Medium] text-[17px]  py-4 px-4 bg-[#082473] border border-transparent  text-sm text-white transition-all shadow-md hover:shadow-lg  focus:shadow-none  hover:bg-[#39C0FA] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+          You will get access to SAP Labs to practice the SAP concepts. Handpicked real world simulated scenarios
+
+        </div>
+        <span
+          class="absolute top-0.5 right-0.5  w-[30px] h-[30px] translate-x-2/4    -translate-y-2/4 font-[quicksand-bold] flex  items-center justify-center rounded-full bg-[#F8B81F] py-1 px-1 text-[18px] text-[#082473]">
+          3
+        </span>
+      </div>
+
+      <div class="relative inline-flex">
+        <div
+          class="rounded-md w-[900px] font-[quicksand-Medium] text-[17px]  py-4 px-4 bg-[#082473] border border-transparent  text-sm text-white transition-all shadow-md hover:shadow-lg  focus:shadow-none  hover:bg-[#39C0FA] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+          We have dedicated placement cell which works with 50+ IT companies for SAP staffing
+
+
+        </div>
+        <span
+          class="absolute top-0.5 right-0.5  w-[30px] h-[30px] translate-x-2/4    -translate-y-2/4 font-[quicksand-bold] flex  items-center justify-center rounded-full bg-[#F8B81F] py-1 px-1 text-[18px] text-[#082473]">
+          4
+        </span>
+      </div>
+
+      <div class="relative inline-flex">
+        <div
+          class="rounded-md w-[900px] font-[quicksand-Medium] text-[17px]  py-4 px-4 bg-[#082473] border border-transparent  text-sm text-white transition-all shadow-md hover:shadow-lg  focus:shadow-none  hover:bg-[#39C0FA] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+          Mock interviews, soft skill training
+
+
+
+        </div>
+        <span
+          class="absolute top-0.5 right-0.5  w-[30px] h-[30px] translate-x-2/4    -translate-y-2/4 font-[quicksand-bold] flex  items-center justify-center rounded-full bg-[#F8B81F] py-1 px-1 text-[18px] text-[#082473]">
+          5
+        </span>
+      </div>
+
+      <div class="relative inline-flex">
+        <div
+          class="rounded-md w-[900px] font-[quicksand-Medium] text-[17px]   py-4 px-4 bg-[#082473] border border-transparent  text-sm text-white transition-all shadow-md hover:shadow-lg  focus:shadow-none  hover:bg-[#39C0FA] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+          Simulated experience of blueprinting exercise as SAP S4HANA Functional consultant (Stepping into real
+          consultant shoes)
+
+
+        </div>
+        <span
+          class="absolute top-0.5 right-0.5  w-[30px] h-[30px] translate-x-2/4    -translate-y-2/4 font-[quicksand-bold] flex  items-center justify-center rounded-full bg-[#F8B81F] py-1 px-1 text-[18px] text-[#082473]">
+          6
+        </span>
+      </div>
+    </div>
+  </section>
+  <!-- section-6-ends -->
+
+  <!-- Section-7-starts -->
+  <section
+    class="bg-[url('/assets/images/bg.webp')] flex flex-col bg-cover p-10 bg-center md:py-[100px] md:h-[100vh] w-full">
+
+    <div class="w-full text-[22px] py-10 font-[Quicksand-Bold] text-[white] md:text-4xl text-center">We’ll let the
+      numbers talk</div>
+
+    <div class="grid md:grid-cols-3 gap-10 md:px-[300px] w-full ">
+      <div class="flex items-center justify-center gap-2 bg-white rounded-xl py-5 ">
+        <i class="fa-solid fa-graduation-cap text-[32px]" style="color: #39C0FA;"></i>
+        <p class="font-[quicksand-medium] text-[18px] gap-2 flex items-center"> <b class="text-[26px]">150K+</b>
+          Learners</p>
+      </div>
+
+      <div class="flex items-center justify-center gap-2 px-2 bg-white rounded-xl py-5 ">
+        <i class="fa-solid fa-globe text-[32px]" style="color: #39C0FA;"></i>
+        <p class="font-[quicksand-medium]  text-[18px] gap-2 flex items-center"> <b class="text-[26px]">30+</b>Live
+          Classes
+
+        </p>
+      </div>
+
+      <div class="flex items-center justify-center gap-2 bg-white rounded-xl py-5 ">
+        <i class="fa-solid fa-star text-[32px]" style="color: #39C0FA;"></i>
+        <p class="font-[quicksand-medium] text-[18px] gap-2 flex items-center"> <b class="text-[26px]">4.5/5</b>Ratings
+        </p>
+
+      </div>
+
+    </div>
+
+
+  </section>
+  <!-- Section-7-ends -->
+
+  <!-- Section-8-starts -->
+  <section class="w-full md:flex md:h-[100vh] ">
+    <div class="md:w-1/2">
+      <h1 class="md:text-[48px] text-[24px] text-center font-[quicksand-bold]  pt-10 px-[100px]">Course Content for each
+        Module</h1>
+    </div>
+    <div class="md:w-1/2 py-10 md:px-[80px] relative p-4 flex flex-col gap-4 webscrol  md:overflow-y-scroll   ">
+      <!-- slide1 -->
+      <div class="flex gap-2 p-6 flex-col shrink-0 bg-[#39C0FA] rounded-[10px] static md:sticky md:top-[10px]">
+        <h1 class="text-2xl text-white font-[quicksand-bold]">Introductions to S4 HANA Simple logistics</h1>
+        <li class="text-[18px] font-[quicksand-Medium] text-white py-2">Implementing SAP S/4 HANA Fiori Apps or Public
+          Cloud Application</li>
+        <div class="w-full rounded-lg p-2 bg-white flex items-center gap-2">
+          <i class="fa-solid fa-circle-check" style="color: #FFD43B;"></i>
+          <div>
+
+            <p class="text-[17px] font-[Quicksand-Regular]">Implementing SAP S/4 HANA Fiori Apps or Public Cloud
+              Application</p>
+          </div>
+        </div>
+
+        <div class="w-full rounded-lg p-2 bg-white flex items-center gap-2">
+          <i class="fa-solid fa-circle-check" style="color: #FFD43B;"></i>
+          <div>
+
+            <p class="text-[17px] font-[Quicksand-Regular]">Fundamental of Enterprise Structure & Configuration of
+              Master Data</p>
+          </div>
+        </div>
+
+        <div class="w-full rounded-lg p-2 bg-white flex items-center gap-2">
+          <i class="fa-solid fa-circle-check" style="color: #FFD43B;"></i>
+          <div>
+
+            <p class="text-[17px] font-[Quicksand-Regular]">Sales Order Cycle[O2C Cycle] & Types of Sales Order</p>
+          </div>
+        </div>
+
+        <div class="w-full rounded-lg p-2 bg-white flex items-center gap-2">
+          <i class="fa-solid fa-circle-check" style="color: #FFD43B;"></i>
+          <div>
+
+            <p class="text-[17px] font-[Quicksand-Regular]">Agreements & Contracts</p>
+          </div>
+        </div>
+
+        <div class="w-full rounded-lg p-2 bg-white flex items-center gap-2">
+          <i class="fa-solid fa-circle-check" style="color: #FFD43B;"></i>
+          <div>
+
+            <p class="text-[17px] font-[Quicksand-Regular]">Fast Material Entry in Sales Order</p>
+          </div>
+        </div>
+
+        <div class="w-full rounded-lg p-2 bg-white flex items-center gap-2">
+          <i class="fa-solid fa-circle-check" style="color: #FFD43B;"></i>
+          <div>
+
+            <p class="text-[17px] font-[Quicksand-Regular]">Picking, Packing, Shipping, & Transportation</p>
+          </div>
+        </div>
+
+        <div class="w-full rounded-lg p-2 bg-white flex items-center gap-2">
+          <i class="fa-solid fa-circle-check" style="color: #FFD43B;"></i>
+          <div>
+
+            <p class="text-[17px] font-[Quicksand-Regular]">Credit Management</p>
+          </div>
+        </div>
+
+        <div class="w-full rounded-lg p-2 bg-white flex items-center gap-2">
+          <i class="fa-solid fa-circle-check" style="color: #FFD43B;"></i>
+          <div>
+
+            <p class="text-[17px] font-[Quicksand-Regular]">Pricing Procedure for Sales Order</p>
+          </div>
+        </div>
+
+        <div class="w-full rounded-lg p-2 bg-white flex items-center gap-2">
+          <i class="fa-solid fa-circle-check" style="color: #FFD43B;"></i>
+          <div>
+
+            <p class="text-[17px] font-[Quicksand-Regular]">Billing Processing</p>
+          </div>
+        </div>
+
+        <div class="w-full rounded-lg p-2 bg-white flex items-center gap-2">
+          <i class="fa-solid fa-circle-check" style="color: #FFD43B;"></i>
+          <div>
+
+            <p class="text-[17px] font-[Quicksand-Regular]">Available to Promise</p>
+          </div>
+        </div>
+
+        <div class="w-full rounded-lg p-2 bg-white flex items-center gap-2">
+          <i class="fa-solid fa-circle-check" style="color: #FFD43B;"></i>
+          <div>
+
+            <p class="text-[17px] font-[Quicksand-Regular]">Advance Topics like Credit Memo, Debit Memo, Consignment &
+              3RD Party </p>
+          </div>
+        </div>
+
+
+      </div>
+      <!-- slide2 -->
+      <div class="flex gap-2 p-6 flex-col shrink-0 bg-[#39C0FA] rounded-[10px] static md:sticky md:top-[10px]">
+        <h1 class="text-2xl text-white font-[quicksand-bold]">SAP S/4 HANA Implementation Consultant Supply Chain
+        </h1>
+        <li class="text-[18px] font-[quicksand-Medium] text-white py-2">An SAP S/4HANA Implementation Consultant for
+          Supply Chain plays a critical role in helping organizations streamline and optimize their supply chain
+          operations using SAP’s next-generation ERP system.</li>
+        <div class="w-full rounded-lg p-2 bg-white flex items-center gap-2">
+          <i class="fa-solid fa-circle-check" style="color: #FFD43B;"></i>
+          <div>
+
+            <p class="text-[17px] font-[Quicksand-Regular]">Implementing SAP S/4 HANA Fiori Apps or Public Cloud
+              Application</p>
+          </div>
+        </div>
+
+        <div class="w-full rounded-lg p-2 bg-white flex items-center gap-2">
+          <i class="fa-solid fa-circle-check" style="color: #FFD43B;"></i>
+          <div>
+
+            <p class="text-[17px] font-[Quicksand-Regular]">Fundamental of Enterprise Structure & Configuration of
+              Master Data</p>
+          </div>
+        </div>
+
+        <div class="w-full rounded-lg p-2 bg-white flex items-center gap-2">
+          <i class="fa-solid fa-circle-check" style="color: #FFD43B;"></i>
+          <div>
+
+            <p class="text-[17px] font-[Quicksand-Regular]">Customization & Configuration for All types of Procurement
+            </p>
+          </div>
+        </div>
+
+        <div class="w-full rounded-lg p-2 bg-white flex items-center gap-2">
+          <i class="fa-solid fa-circle-check" style="color: #FFD43B;"></i>
+          <div>
+
+            <p class="text-[17px] font-[Quicksand-Regular]">Customization & Configuration of Inventory Management</p>
+          </div>
+        </div>
+
+        <div class="w-full rounded-lg p-2 bg-white flex items-center gap-2">
+          <i class="fa-solid fa-circle-check" style="color: #FFD43B;"></i>
+          <div>
+
+            <p class="text-[17px] font-[Quicksand-Regular]">Logistic Invoice Verification</p>
+          </div>
+        </div>
+
+        <div class="w-full rounded-lg p-2 bg-white flex items-center gap-2">
+          <i class="fa-solid fa-circle-check" style="color: #FFD43B;"></i>
+          <div>
+
+            <p class="text-[17px] font-[Quicksand-Regular]">Special Stocks & Special Types of Procurement</p>
+          </div>
+        </div>
+
+        <div class="w-full rounded-lg p-2 bg-white flex items-center gap-2">
+          <i class="fa-solid fa-circle-check" style="color: #FFD43B;"></i>
+          <div>
+
+            <p class="text-[17px] font-[Quicksand-Regular]">Vendor Return Process</p>
+          </div>
+        </div>
+
+        <div class="w-full rounded-lg p-2 bg-white flex items-center gap-2">
+          <i class="fa-solid fa-circle-check" style="color: #FFD43B;"></i>
+          <div>
+
+            <p class="text-[17px] font-[Quicksand-Regular]">Purchase Order Pricing Procedure & Purchase Order Release
+              Strategy</p>
+          </div>
+        </div>
+
+      </div>
+      <!-- slide3 -->
+      <div class="flex gap-2 p-6 flex-col shrink-0 bg-[#39C0FA] rounded-[10px] static md:sticky md:top-[10px]">
+        <h1 class="text-2xl text-white font-[quicksand-bold]">SAP S/4 HANA Implementation Consultant Finance
+
+        </h1>
+        <li class="text-[18px] font-[quicksand-Medium] text-white py-2">An SAP S/4HANA Implementation Consultant for
+          Finance specializes in transforming and streamlining financial operations through SAP’s advanced ERP platform.
+        </li>
+        <div class="w-full rounded-lg p-2 bg-white flex items-center gap-2">
+          <i class="fa-solid fa-circle-check" style="color: #FFD43B;"></i>
+          <div>
+
+            <p class="text-[17px] font-[Quicksand-Regular]">Implementing SAP S/4 HANA Fiori Apps or Public Cloud
+              Application</p>
+          </div>
+        </div>
+
+        <div class="w-full rounded-lg p-2 bg-white flex items-center gap-2">
+          <i class="fa-solid fa-circle-check" style="color: #FFD43B;"></i>
+          <div>
+
+            <p class="text-[17px] font-[Quicksand-Regular]">Fundamental of Enterprise Structure & Configuration of GL
+            </p>
+          </div>
+        </div>
+
+        <div class="w-full rounded-lg p-2 bg-white flex items-center gap-2">
+          <i class="fa-solid fa-circle-check" style="color: #FFD43B;"></i>
+          <div>
+
+            <p class="text-[17px] font-[Quicksand-Regular]">A/C Payable & A/C Receivable with Business Partner Concept
+            </p>
+          </div>
+        </div>
+
+        <div class="w-full rounded-lg p-2 bg-white flex items-center gap-2">
+          <i class="fa-solid fa-circle-check" style="color: #FFD43B;"></i>
+          <div>
+
+            <p class="text-[17px] font-[Quicksand-Regular]">Taxation[Direct Tax & Indirect Tax]</p>
+          </div>
+        </div>
+
+        <div class="w-full rounded-lg p-2 bg-white flex items-center gap-2">
+          <i class="fa-solid fa-circle-check" style="color: #FFD43B;"></i>
+          <div>
+
+            <p class="text-[17px] font-[Quicksand-Regular]">Asset Accounting & its Complete Configuration</p>
+          </div>
+        </div>
+
+        <div class="w-full rounded-lg p-2 bg-white flex items-center gap-2">
+          <i class="fa-solid fa-circle-check" style="color: #FFD43B;"></i>
+          <div>
+
+            <p class="text-[17px] font-[Quicksand-Regular]">Introduction of Controlling with Customization &
+              Configuration</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- Section-8-ends -->
+
+  <!-- Section-9-starts-FAQ -->
+
+  <div
+    class=" md:w-full bg-gradient-to-r from-[#082473] via-[#082473] to-[#39C0FA] px-6 pt-10 pb-8 mt-8 ring-1 ring-gray-900/5 ">
+    <div class="w-full ">
+      <div class="flex flex-col items-center">
+        <h2 class="mt-5 text-center text-white text-2xl font-[quicksand-bold] font-bold tracking-tight md:text-5xl">
+          Frequenty asked questions</h2>
+
+      </div>
+      <div class="mx-auto mt-8 grid max-w-xl divide-y divide-neutral-200">
+        <div class="py-5">
+          <details class="group">
+            <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
+              <span class="text-[20px] text-white font-[Quicksand-Medium]">What is this webinar about?</span>
+              <span class="transition group-open:rotate-180">
+                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="#FFFFFF"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </span>
+            </summary>
+            <p class="group-open:animate-fadeIn mt-3 text-white font-[Quicksand-Regular] text-[16px]">Springerdata
+              offers a variety of
+              This webinar introduces the SAP S/4HANA Public Cloud Certification Course by ITAA. It covers how you can
+              transition into a high-paying SAP career in just over 90 days—even without an IT or coding background.
+            </p>
+          </details>
+        </div>
+        <div class="py-5">
+          <details class="group">
+            <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
+              <span class="text-[20px] text-white font-[Quicksand-Medium]">Is coding or IT background required?</span>
+              <span class="transition group-open:rotate-180">
+                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="#FFFFFF"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </span>
+            </summary>
+            <p class="group-open:animate-fadeIn mt-3 text-white font-[Quicksand-Regular] text-[16px]">No. The course is
+              designed for non-tech professionals. SAP S/4HANA Functional Consulting is more about business processes
+              than programming.
+            </p>
+          </details>
+        </div>
+        <div class="py-5">
+          <details class="group">
+            <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
+              <span class="text-[20px] text-white font-[Quicksand-Medium]"> Are there any placement guarantees?</span>
+              <span class="transition group-open:rotate-180">
+                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="#FFFFFF"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </span>
+            </summary>
+            <p class="group-open:animate-fadeIn mt-3 text-white font-[Quicksand-Regular] text-[16px]">Yes. ITAA offers
+              job placement assistance guarantee along with interview prep, resume building, and simulated consulting
+              projects.
+            </p>
+          </details>
+        </div>
+        <div class="py-5">
+          <details class="group">
+            <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
+              <span class="text-[20px] text-white font-[Quicksand-Medium]">Can I join if I’m already working in
+                SAP?</span>
+              <span class="transition group-open:rotate-180">
+                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="#FFFFFF"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </span>
+            </summary>
+            <p class="group-open:animate-fadeIn mt-3 text-white font-[Quicksand-Regular] text-[16px]">Yes. The course is
+              suitable for both newcomers and working SAP professionals seeking growth, certification, or a shift into
+              consulting.
+            </p>
+          </details>
+        </div>
+        <div class="py-5">
+          <details class="group">
+            <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
+              <span class="text-[20px] text-white font-[Quicksand-Medium]"> How do I contact support?</span>
+              <span class="transition group-open:rotate-180">
+                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="#FFFFFF"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </span>
+            </summary>
+            <p class="group-open:animate-fadeIn mt-3 text-white font-[Quicksand-Regular] text-[16px]">If you need help
+              with our platform or
+              have any other questions, you can contact the company's support team by submitting a support
+              request through the website or by emailing support@ourwebsite.com.
+            </p>
+          </details>
+        </div>
+        <div class="py-5">
+          <details class="group">
+            <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
+              <span class="text-[20px] text-white font-[Quicksand-Medium]">What do past learners say about this
+                course?</span>
+              <span class="transition group-open:rotate-180">
+                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="#FFFFFF"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </span>
+            </summary>
+            <p class="group-open:animate-fadeIn mt-3 text-white font-[Quicksand-Regular] text-[16px]">Many students from
+              non-IT backgrounds (BPO, hospitality, banking, etc.) have successfully transitioned into SAP roles.
+              Testimonials highlight real-world application, practical knowledge, and career success.
+            </p>
+          </details>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <!-- Section-9-ends-FAQ -->
+
+  <!-- section-10-start -->
+  <section class="w-full md:mx-auto px-[50px] md:px-[100px] py-16">
+    <h2 class="text-3xl text-[#082473] md:text-5xl font-[quicksand-bold] font-bold text-center mb-10">Testimonials</h2>
+
+    <div class=" overflow-hidden  border-1 rounded-lg border-black md:mx-auto  ">
+      <div id="carousel-track" class="flex transition-transform duration-500">
+        <!-- Slide 1 -->
+        <div class="min-w-full flex flex-col items-center justify-center p-8 text-center space-y-2">
+
+          <p class="text-lg md:text-xl italic font-[quicksand-Medium] text-[14px] py-5 md:px-20 text-gray-600">
+            "I am proud to have completed the SAP FICO course, which provided me with a strong foundation in financial
+            accounting using SAP. The course covered essential modules like General Ledger, Accounts Payable, Accounts
+            Receivable, and Asset Accounting in great detail.
+            The practical exercises and real-time examples helped me understand how financial transactions are managed
+            in SAP systems. This training has enhanced my technical skills and prepared me for real-world SAP FICO
+            roles. I highly recommend it to anyone looking to build a career in SAP Financial Accounting.
+            "
+          </p>
+          <img class="w-[50px] h-[50px] rounded-full " src="/assets/testimonial/Picture1.jpg" alt="">
+          <div class="text-gray-900 font-semibold"> Darshana Chavan
+          </div>
+          <div class="text-gray-500 text-sm">From BPO to SAP Logistics
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="min-w-full flex flex-col items-center justify-center p-8 text-center space-y-2">
+
+          <p class="text-lg md:text-xl italic font-[quicksand-Medium] text-[14px] py-5 md:px-20 text-gray-600">
+            "I’m excited to have completed the SAP MM course, which gave me a solid understanding of materials
+            management and procurement processes within SAP. The course covered key areas such as purchasing, inventory
+            management, vendor master data, and invoice verification.
+            The hands-on training and real-time scenarios helped me apply what I learned effectively. This course has
+            strengthened my skills and prepared me for opportunities in supply chain and procurement roles. I highly
+            recommend it to anyone aiming to build a career in SAP MM
+
+            "
+          </p>
+          <img class="w-[50px] h-[50px] rounded-full " src="/assets/testimonial/Picture2.jpg" alt="">
+          <div class="text-gray-900 font-semibold">Aniket Sharma
+          </div>
+          <div class="text-gray-500 text-sm">Breaking Barriers with SAP MM
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="min-w-full flex flex-col items-center justify-center p-8 text-center space-y-2">
+
+          <p class="text-lg md:text-xl italic font-[quicksand-Medium] text-[14px] py-5 md:px-20 text-gray-600">
+            "I am glad to have successfully completed the SAP SD course, which provided me with comprehensive knowledge
+            of sales and distribution processes in SAP. The course covered essential topics such as sales order
+            processing, pricing, shipping, billing, and customer master data.
+            The practical training and real-time examples made it easy to understand complex concepts and apply them
+            effectively. Completing this course has improved my confidence and prepared me well for a career in SAP SD.
+            I highly recommend it to anyone interested in the sales and logistics domain
+
+            "
+          </p>
+          <img class="w-[50px] h-[50px] rounded-full " src="/assets/testimonial/Picture3.jpg" alt="">
+          <div class="text-gray-900 font-semibold">Nagesh Gavali
+          </div>
+          <div class="text-gray-500 text-sm">From Banking to SAP SD
+          </div>
+        </div>
+        <!-- Slide 4 -->
+        <div class="min-w-full flex flex-col items-center justify-center p-8 text-center space-y-2">
+
+          <p class="text-lg md:text-xl italic font-[quicksand-Medium] text-[14px] py-5 md:px-20 text-gray-600">
+            "I am proud to have completed the SAP PP course, which provided me with in-depth knowledge of production
+            planning and control processes within SAP. The course covered important topics such as material requirement
+            planning (MRP), bill of materials (BOM), routing, work centers, and production orders.
+            The hands-on training and real-time scenarios greatly enhanced my understanding and practical skills. This
+            course has prepared me to effectively support manufacturing and production processes in an SAP environment.
+            I highly recommend it to anyone looking to build a career in SAP PP
+
+
+            "
+          </p>
+          <img class="w-[50px] h-[50px] rounded-full " src="/assets/testimonial/Picture4.png" alt="">
+          <div class="text-gray-900 font-semibold">Ashok Rajoria </div>
+
+
+          <div class="text-gray-500 text-sm">From Finance to SAP PP</div>
+
+
+        </div>
+        <!-- Slide 5 -->
+        <div class="min-w-full flex flex-col items-center justify-center p-8 text-center space-y-2">
+
+          <p class="text-lg md:text-xl italic font-[quicksand-Medium] text-[14px] py-5 md:px-20 text-gray-600">
+            "I’m pleased to have completed the SAP HCM course, which offered a thorough understanding of human resource
+            processes within SAP. The course covered key modules like organizational management, personnel
+            administration, time management, and payroll.
+            The practical sessions and real-time scenarios were especially helpful in building hands-on experience. This
+            training has strengthened my knowledge of HR operations in SAP and prepared me for future roles in the HCM
+            domain. I highly recommend this course to anyone looking to grow their career in SAP HCM
+
+
+
+            "
+          </p>
+          <img class="w-[50px] h-[50px] rounded-full " src="/assets/testimonial/Picture5.jpg" alt="">
+          <div class="text-gray-900 font-semibold">Sanil Parab</div>
+
+
+
+          <div class="text-gray-500 text-sm">Hotel Management to SAP HCM</div>
+
+
+
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <button id="prev"
+        class="invisible absolute top-1/2 left-4 -translate-y-1/2 bg-white border rounded-full shadow p-2 hover:bg-gray-100">
+        &larr;
+      </button>
+      <button id="next"
+        class="invisible absolute top-1/2 right-4 -translate-y-1/2 bg-white border rounded-full shadow p-2 hover:bg-gray-100">
+        &rarr;
+      </button>
+    </div>
+
+    <!-- Dots -->
+    <!-- <div class="flex justify-center mt-6 space-x-2">
+      <button class="w-3 h-3 rounded-full bg-gray-300" data-index="0"></button>
+      <button class="w-3 h-3 rounded-full bg-gray-300" data-index="1"></button>
+      <button class="w-3 h-3 rounded-full bg-gray-300" data-index="2"></button>
+    </div> -->
+  </section>
+  <!-- section-10-ends -->
+
+  <!-- section-11-starts -->
+  <section class="w-full px-10 flex flex-col items-center justify-center bg-[#E5F5FB] h-[50vh]">
+    <h1 class="md:text-4xl text-[17px] font-[quicksand-bold] text-center">So , what are you waiting for?</h1>
+    <p class="text-center text-[17px]">Take the first step towards your dream career in SAP by enrolling in our courses
+      today!</p>
+    <button
+      class=" apply-btn mt-5 text-[16px] font-[quicksand-bold]  px-6 py-3 bg-[#082473] text-white rounded-full">Join Us
+      Now!</button>
+
+
+  </section>
+  <!-- section-11-ends -->
+
+
+  <!-- footer-starts -->
+  <footer class="w-full flex flex-col items-center mt-[50px]  pb-[160px] ">
+    <img class="w-[100px] h-[100px] py-5 " src="/assets/logo/itaa-logo.png" alt="logo.png">
+    <div class="flex flex-col gap-1 items-center ">
+      <p class="text-[17px] font-[quicksand-Medium]">Privacy Policy</p>
+      <p class="text-[17px] font-[quicksand-Medium]">Refund Policy</p>
+
+    </div>
+    <div class="mt-[50px] flex flex-col items-center justify-center">
+      <p class="text-[17px] font-[quicksand-bold]  ">Company Address:</p>
+      <p class="text-[17px] font-[quicksand-Medium] text-center">Shop no. 16 ; 5th floor ; LKK arcade near rangoli
+        <br>sarees shop thane (M corp) 400601
+      </p>
+    </div>
+  </footer>
+  <!-- footer-ends  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="/script.js"></script>
+
+</body>
+
+</html>
