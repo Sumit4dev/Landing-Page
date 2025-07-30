@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Quicksand-Light';
+  src: url(/fonts/Quicksand-Light.ttf);
+}
+
+@font-face {
+  font-family: 'Quicksand-Bold';
+  src: url(/fonts/Quicksand-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Quicksand-Medium';
+  src: url(/fonts/Quicksand-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Quicksand-Regular';
+  src: url(/fonts/Quicksand-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Quicksand-SemiBold';
+  src: url(/fonts/Quicksand-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url(/fonts/Quicksand-Regular.ttf);
+}
+
+:root{
+  --primary-color: #082473;
+  --secondary-color: #F8B81F;
+  --tertiary-color: #39C0FA;
+  --quaternary-color: #F92596;
+ 
+}
+
+
+
+html, 
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.webscrol::-webkit-scrollbar{
+  display: none;
+}
+
+
+.marquee-track {
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+        .swiper-button-prev:after,
+        .swiper-rtl .swiper-button-next:after {
+            content: '' !important;
+        }
+
+        .swiper-button-next:after,
+        .swiper-rtl .swiper-button-prev:after {
+            content: '' !important;
+        }
+
+        .swiper-button-next svg,
+        .swiper-button-prev svg {
+            width: 24px !important;
+            height: 24px !important;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            position: relative !important;
+        }
+
+        .swiper-slide.swiper-slide-active {
+            --tw-border-opacity: 1 !important;
+            border-color: rgb(79 70 229 / var(--tw-border-opacity)) !important;
+        }
+
+        .swiper-slide.swiper-slide-active>.swiper-slide-active\:text-indigo-600 {
+            --tw-text-opacity: 1;
+            color: rgb(79 70 229 / var(--tw-text-opacity));
+        }
+
+        .swiper-slide.swiper-slide-active>.flex .grid .swiper-slide-active\:text-indigo-600 {
+            --tw-text-opacity: 1;
+            color: rgb(79 70 229 / var(--tw-text-opacity));
+        }
+
+
+
+
+
